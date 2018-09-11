@@ -1,6 +1,8 @@
 <!Doctype html>
 <html>
     <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
         <title> Homepage </title>
         <link rel="stylesheet" href="stylesheets/main.css">
     </head>
@@ -19,18 +21,26 @@
         </div>
         <div class="login-content">
                 <form action="pages/questions.html" class="homepage-form">
-                    <input type="text" placeholder="name">
+                    <!--<input type="text" placeholder="name">-->
                     <input type="email" placeholder="email">
                     <input type="password" placeholder='password'>
-                    <button id="get_started"> Login</button>
+                    <label>
+                    	<input id="checkbox" type="checkbox" checked ="checked" name="remember"> Remember me
+                    </label>
+                    <span id="forgot-password">
+                    	<a> forgot password?</a>
+                    </span>
+                    <button id="login-button"> Login</button>
+                    <span id="or">
+                    	<p> ----------------------------------- or ------------------------------------</p>
+                    </span>
+                    <span id="or-mobile">
+                    	<p> ----------------------- or -----------------------</p>
+                    </span>
+                    <span id="create-account">
+                    	<p> <a href="#">Create account</a> </p>
+                    </span>
                 </form>
-                 
-                <div class="all-info-stuff">
-                 <p id="info-stuff"> <a>Remember me </a></p>
-                 <p id="info-stuff1"><a> forgot password?</a> </p>
-                 <p id="info-stuff2"> ----------------------------------- or ------------------------------------   </p>
-                 <p id="info-stuff3"> <a href="#">Create account</a> </p>
-                </div>
             
         </div>
     
