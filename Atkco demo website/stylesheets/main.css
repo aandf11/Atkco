@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* -------------HOMEPAGE STYLES----------*/
+/* -------------GENERAL STYLES----------*/
 
 body, html{
     height: 100%;
@@ -39,7 +39,17 @@ a {
     text-decoration:none;
 }
 
+#active-page{
+	color:#0B6264;
+	border-bottom:4px solid black;
+	
+	}
+#login-btn{
+	border: 1.2px solid #0B6264;
+	border-radius:10px;
+	}
 
+/* --------------------------------------TABLET----------------------------------------------- */
 @media only screen and (min-width: 481px) {
 .menu_nav{
     z-index: 1000;
@@ -49,9 +59,10 @@ a {
 }
 
 .menu_nav a{
-    padding: 10px;
+    padding-right: 10px;
+	padding-left: 10px;
     font-size: 16px;
-    color: white;
+    color: black;
 }
 
 .logo{
@@ -73,6 +84,79 @@ a {
     display: inline-block;
     margin-left: 6px;
 }
+
+.welcome h1{
+	position:absolute;
+	left: 50px;
+	top:160px;
+	font-weight:lighter;
+	letter-spacing:3px;
+	word-spacing: 5px;
+	}
+.welcome span{
+	color:#0B6264;
+	font-weight:bold;
+	word-spacing:7px;
+	}
+
+.welcome button{
+	position:absolute;
+	left: 50px;
+	top:350px;
+	width: 20%;
+	font-size:20px;
+	color:white;
+	text-transform:uppercase;
+	background-color:#0B6264;
+	border:none;
+	border-radius:10px;
+	height:40px;
+	}
+
+.welcome h3{
+	position: absolute;
+	top: 280px;
+	left:50px;
+	width:24%;
+	word-spacing:6px;
+	letter-spacing:1px;
+	font-size:18px;
+	}
+
+.home-img{
+	position:absolute;
+	right:0;
+	top:35px;
+	width:43%;
+	height:auto;
+	}
+.home-img img{
+	width:100%;
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	position: absolute;
+    clip: rect(50px,600px,450px,1px);
+	}
+.img-text{
+	width:55%;
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:200px;
+	background-color:white;
+	border-top:solid 10px #0B6264;
+	text-align:center;
+	}
+
+.home-footer{
+	width: 100%;
+	position:absolute;
+	bottom:0;
+	height:40px;
+	background-color:#0B6264;
+	}
 
 .login-content{
     z-index:1;
@@ -221,9 +305,11 @@ label{
 }
 
 .menu_nav a{
-    padding: 10px;
+    padding-right: 10px;
+	padding-left: 10px;
     font-size: 17px;
-    color: white;
+    color: black;
+
 }
 
 .logo{
@@ -245,6 +331,59 @@ label{
     display: inline-block;
     margin-left: 6px;
 }
+
+.welcome h1{
+	position:absolute;
+	left: 50px;
+	top:160px;
+	font-weight:lighter;
+	}
+.welcome span{
+	color:#0B6264;
+	font-weight:bold;
+	word-spacing:7px;
+	}
+.welcome button{
+	position:absolute;
+	left: 50px;
+	top:425px;
+	width: 20%;
+	font-size:20px;
+	color:white;
+	text-transform:uppercase;
+	background-color:#0B6264;
+	border:none;
+	border-radius:10px;
+	height:40px;
+	}
+.welcome h3{
+	position: absolute;
+	top: 280px;
+	left:50px;
+	width:24%;
+	word-spacing:6px;
+	letter-spacing:1px;
+	font-size:18px;
+	opacity:0.8;
+	}
+.img-text{
+	width:55%;
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:200px;
+	background-color:white;
+	border-top:solid 10px #0B6264;
+	text-align:center;
+	}
+
+.home-footer{
+	width: 100%;
+	position:absolute;
+	bottom:0;
+	height:40px;
+	background-color:#0B6264;
+	}
 
 .login-content{
     z-index:1;
@@ -338,6 +477,8 @@ label{
 /*----- QUESTIONS PAGE--------*/
 
 .questions li{
+	position:relative;
+	left:-80%;
    width: 70%;
    background: darkgrey;
    height: 60px;
@@ -346,13 +487,20 @@ label{
    padding-top: 50px;
    padding-left:30px;
    font-size: 18px;
-   animation-name: move-questions;
-   animation-duration:4s;
+   animation-name: moves;
+   animation-duration:0.5s;
+   webkit-animation-name: move-questions;
+   webkit-animation-duration:0.5s;
+   animation-timing-function:linear;
+   animation-fill-mode: forwards;
 }
 
-@keyframes move-questions{
-	0% { left:-0px};
-	100% {right: 100%};
+@keyframes moves{
+	0% { left:-40%};
+	10% {left:-10%};
+	20% {left: 0%};
+	50%{left: 0.3%}
+	100% {left: 0.9%};
 	}
 .questions li:hover{
     background:cadetblue;
