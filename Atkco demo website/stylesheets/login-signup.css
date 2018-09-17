@@ -1,0 +1,193 @@
+@charset "utf-8";
+
+
+
+/* --------------------------------------TABLET----------------------------------------------- */
+@media only screen and (min-width: 481px) {
+.login-content{
+    z-index:1;
+    position: absolute;
+    left: right;
+    height: 100%;
+    width:50%;
+    background-color: white;
+}
+.homepage-form{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    padding-top: 150px;
+}
+.homepage-form input{
+    margin-top:5%;
+    margin-left: 10%;
+    width: 75%;
+    display: inline-block;
+    border: solid 2px cadetblue;
+    background-color:rgba(220,220,220,0.7);
+    height: 50px;
+    padding-left: 5px;
+    font-size:16px;
+    color: cadetblue;
+}
+
+
+
+label{
+	 color: cadetblue;
+	 height: 20px;
+	 margin-top: 0px;
+	 display:block;
+	 font-size:15px;
+}
+
+#checkbox{
+	display:inline-block;
+	width:15px;
+	margin-top: 0px;
+	vertical-align:middle;
+}
+
+
+#forgot-password{
+	display:inline-block;
+    width:124px;
+    color: cadetblue;
+	margin-left:58%;
+	margin-top:3px;
+	z-index:2;
+	font-size:15px;
+}
+
+#or{ 
+	display:none;
+}
+#or-mobile{
+    margin-left: 12%;
+    width: 75%;
+    display: inline-block;
+    color: cadetblue;
+    
+}
+
+#create-account a{
+	margin-left: 34%;
+    width:auto;
+    color: cadetblue;
+	font-weight: bold;
+    
+}
+
+
+#login-button {
+    margin-top:10px;
+    margin-left: 10.5%;
+    width: 75%;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+#login-button:active{
+    opacity:0.7;
+}
+}
+
+
+@media only screen and (min-width: 769px) {
+
+.login-content{
+    z-index:1;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width:50%;
+    background-color: white;
+}
+.homepage-form{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    padding-top: 150px;
+}
+.homepage-form input{
+    margin-top:5%;
+    margin-left: 10%;
+    width: 75%;
+    display: inline-block;
+    border: solid 2px cadetblue;
+    background-color:rgba(220,220,220,0.7);
+    height: 50px;
+    padding-left: 5px;
+    font-size:16px;
+    color: cadetblue;
+}
+
+
+
+label{
+	 color: cadetblue;
+	 height: 20px;
+	 margin-top: 0px;
+	 display:block;
+}
+
+#checkbox{
+	display:inline-block;
+	width:20px;
+	margin-top: 0px;
+	vertical-align:middle;
+}
+
+
+#forgot-password{
+	display:inline-block;
+    width:124px;
+    color: cadetblue;
+	margin-left:68%;
+	margin-top:3px;
+	z-index:2;
+}
+
+#or{
+    margin-left: 18%;
+    width: 75%;
+    display: inline-block;
+    color: cadetblue;
+    
+}
+#or-mobile{ 
+	display:none;
+}
+
+#create-account a{
+	margin-left: 39%;
+    width:auto;
+    color: cadetblue;
+	font-weight: bold;
+    
+}
+
+
+#login-button {
+    margin-top:10px;
+    margin-left: 10.5%;
+    width: 75%;
+    height: 50px;
+    background-color: cadetblue;
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+#login-button:active{
+    opacity:0.7;
+}
+
+
+}
+
