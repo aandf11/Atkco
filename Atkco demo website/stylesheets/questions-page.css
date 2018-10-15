@@ -74,7 +74,6 @@ a {
 .btn:hover{
 	background-color: #3a9093 !important;
 	}
-
 	
 #home-img-container{
 	overflow:hidden;
@@ -85,20 +84,20 @@ a {
 .sliding{
 	opacity:0;
 	animation-name:sliding;
-	animation-duration:1s;
-	animation-delay:2s;
+	animation-duration:2s;
+	animation-delay:1s;
 	animation-fill-mode:forwards;
 	-webkit-animation-name:sliding;
-	-webkit-animation-duration:1s;
-	-webkit-animation-delay:2s;
+	-webkit-animation-duration:2s;
+	-webkit-animation-delay:1s;
 	-webkit-animation-fill-mode:forwards;
 	-moz-animation-name:sliding;
-	-moz-animation-duration:1s;
-	-moz-animation-delay:2s;
+	-moz-animation-duration:2s;
+	-moz-animation-delay:1s;
 	-moz-animation-fill-mode:forwards;
 	-o-animation-name:sliding;
-	-o-animation-duration:1s;
-	-o-animation-delay:2s;
+	-o-animation-duration:2s;
+	-o-animation-delay:1s;
 	-o-animation-fill-mode:forwards;
 	}
 
@@ -159,150 +158,90 @@ a {
 		from  {opacity:0;}
 		to {opacity:1;}
 	}
+
 	
+.bg-img-fadein{
+	opacity:0;
+	animation-name:img-fadein;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-timing-function:ease-in;
+	animation-fill-mode:forwards;
+	-webkit-animation-name:img-fadein;
+	-webkit-animation-duration:2s;
+	-webkit-animation-delay:3s;
+	-webkit-animation-timing-function:ease-in;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-name:img-fadein;
+	-moz-animation-duration:2s;
+	-moz-animation-delay:3s;
+	-moz-animation-timing-function:ease-in;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-name:img-fadein;
+	-o-animation-duration:2s;
+	-o-animation-delay:3s;
+	-o-animation-timing-function:ease-in;
+	-o-animation-fill-mode:forwards;
+	}
+@keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-webkit-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-moz-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-o-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+
+.close-btn{
+	position:absolute;
+	top:30px;
+	right:6%;
+	font-size: 45px !important;
+	}
+	
+/*=========================================================TIPS ===========================================================*/
+
+
 /*==============================================GENERAL STYLES END========================================================*/
-
-
 
 /*=============================================================MOBILE STYLES===================================================*/
 @media only screen and (max-width: 600px) {
-	html, body{
-	overflow:hidden !important;
-	font-size:12px !important;
+#tips-background{
+	height:200% !important;
+	width:100%;
+	position:absolute;
+	z-index:99;
+	background-image:url(../Image/white-staircase.jpg);
+	background-size:cover !important;
+	background-repeat:repeat-x !important;
+	padding:0px;
 	}
-html,body::before{
-	height:100%;
-	background-image:url(../Image/rawpixel-797098-unsplash.jpg);
-	opacity:0.8;
 
-	}
-
-#home-img-container{
+#brand-name{
 	display:none;
-	}
-	
-.nav{
-	margin-right: 10px !important;
-	}
-
-.col-sm-3 img{
-	width:10% !important;
-	margin-left: 12px !important;
-	}
-
-.col-md-6 h1{
-	margin-left: 6px !important;
-	font-size:5.5vw !important;
-	}
-.col-md-6 p{
-	font-size:3vw !important;
-	margin-left: 12px !important;
-	}
-.nav{
-	font-size:10px !important;
-	}
-/*=============MENUS============*/
-#desktop-menu{
-	display:none;
-	}
-#mobile-menu{
-	display:inline-block !important;
-	}
-
-.mobile-menu-content{
-	text-decoration:none;
-	display:none;
-	}
-.mobile-menu-content-active{
-	display:inline-block !important;
-	opacity:0;
-	animation-name:menu-animate;
-	animation-duration:1s;
-	animation-fill-mode:forwards;
-	-webkit-animation-name:menu-animate;
-	-webkit-animation-duration:1s;
-	-webkit-animation-fill-mode:forwards;
-	-moz-animation-name:menu-animate;
-	-moz-animation-duration:1s;
-	-moz-animation-fill-mode:forwards;
-	-o-animation-name:menu-animate;
-	-o-animation-duration:1s;
-	-o-animation-fill-mode:forwards;
-	}
-
-@keyframes menu-animate{
-		from{opacity:0;}
-		to{opacity:1;}
-	}
-@-webkit-keyframes menu-animate{
-		from{opacity:0;}
-		to{opacity:1;}
-	}
-@-moz-keyframes menu-animate{
-		from{opacity:0;}
-		to{opacity:1;}
-	}
-@-o-keyframes menu-animate{
-		from{opacity:0;}
-		to{opacity:1;}
-	}
-
-.mobile-menu-content-opt{
-	 color:#FFF !important;
-	 font-size:14px;
-	 padding-left:30px;
 }
-
-.mobile-menu-content li{
-		width:100%;
-		height: 80px;
-		padding-top:25px;
-	}
-.mobile-menu-content li:hover{
-	background-color: #3a9093 !important;
-	}
-.mobile-menu-content a{
-	text-decoration:none;
-	}
-/*=========MENU ENDS=============*/
 }
-/*======================================================MOBILE STYLES END====================================================*/
-
-
 
 /*===============================================TABLET STYLES BEGIN========================================================== */
 @media only screen and (max-width: 898px) {
-html, body{
-	overflow:hidden;
-	}
-html,body::before{
+#tips-background{
 	height:100%;
-	background-image:url(../Image/rawpixel-797098-unsplash.jpg);
-	font-size:13px;
-	opacity:0.8;
-
-	}
-#home-img-container{
-	display:none;
-	}
-
-
-	
-.nav{
-	margin-right: 10px !important;
-	}
-
-.col-sm-3 img{
-	width:40%;
-	margin-left: 10px !important;
-	}
-#mobile-menu{
-	display:none;
-	}
-.mobile-menu-content{
-	display:none;
-}
-	
+	width:100%;
+	position:absolute;
+	z-index:99;
+	background-image:url(../Image/white-staircase.jpg);
+	background-size:cover !important;
+	background-repeat:repeat-x;
+	padding:0px;
+	}	
 }
 /*=================================================TABLET STYLES END========================================================== */
 
@@ -310,27 +249,14 @@ html,body::before{
 
 /*==============================================DESKTOP STYLES BEGIN==================================================*/
 @media only screen and (min-width: 900px) {
-	html body{
-		font-size:12px;
-		}
-
-.col-md-6 h1{
-	font-size:3vw;
-	margin-left:6px !important;
+#tips-background{
+	height:100%;
+	width:100%;
+	position:absolute;
+	z-index:99;
+	background-image:url(../Image/white-staircase.jpg);
+	background-size:cover !important;
+	background-repeat:repeat-x;
+	padding:0px;
 	}
-.col-md-6 p{
-	font-size:1vw;
-	}
-.nav{
-	font-size:13px;
-	}
-#mobile-menu{
-	display:none;
-	}
-.mobile-menu-content{
-	display:none;
-}
-.mobile-menu-content-active{
-	display:none;
-}
 }
