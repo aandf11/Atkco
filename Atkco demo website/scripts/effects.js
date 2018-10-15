@@ -9,11 +9,11 @@ function activateAnimation(){
 	/*SIGNUP FORM DISPLAY*/
 	$("#btn-signup").click(function(){
 		$("#form1").fadeOut(100);
-		$("#signupForm").fadeIn(90);
+		$("#signupForm").delay(90).fadeIn(90);
 		});
 	$("#cancel-btn").click(function(){
-		$("#signupForm").fadeOut(100);
-		$("#form1").fadeIn(80);
+		$("#signupForm").fadeOut(60);
+		$("#form1").delay(90).fadeIn(80);
 		});
 	}
 
