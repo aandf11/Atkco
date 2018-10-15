@@ -249,19 +249,45 @@ a {
 		to {opacity:1;}
 	}
 
-#login-background{
-	height:200% !important;
-	width:100%;
-	position:absolute;
-	z-index:99;
-	background-image:url(../Image/white-staircase.jpg);
-	background-size:cover !important;
-	background-repeat:repeat-x !important;
-	padding:0px;
+#signupForm{
+	display:none;
+	margin-top:13% !important;	
+}
+
+
+/*=============================================================MOBILE STYLES===================================================*/
+@media only screen and (max-width: 600px) {
+#page-split1{
+	display:none;
 	}
 
+#page-split2 form p{
+	font-size:3vw !important;
+	font-weight:bold;
+}
+
+#page-split2 form label{
+	font-size:2vw !important;
+	display:inline;
+	vertical-align:middle;
+	color:#2a8184 !important;
+}
+#page-split2 form label a{
+	font-size:2vw !important;
+	display:inline;
+	float:right;
+	margin-top:5px;
+	color:#2a8184 !important;
+}
+
+#brand-name{
+	display:none;
+}
+}
+
+
 /*==============================================DESKTOP STYLES BEGIN==================================================*/
-@media only screen and (min-width: 900px) {
+
 #page-split2{
 	background:#FFF;
 	}

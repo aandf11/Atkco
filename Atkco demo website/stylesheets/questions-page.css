@@ -163,23 +163,23 @@ a {
 .bg-img-fadein{
 	opacity:0;
 	animation-name:img-fadein;
-	animation-duration:1s;
-	animation-delay:0.5s;
+	animation-duration:2s;
+	animation-delay:3s;
 	animation-timing-function:ease-in;
 	animation-fill-mode:forwards;
 	-webkit-animation-name:img-fadein;
-	-webkit-animation-duration:1s;
-	-webkit-animation-delay:0.5s;
+	-webkit-animation-duration:2s;
+	-webkit-animation-delay:3s;
 	-webkit-animation-timing-function:ease-in;
 	-webkit-animation-fill-mode:forwards;
 	-moz-animation-name:img-fadein;
-	-moz-animation-duration:1s;
-	-moz-animation-delay:0.5s;
+	-moz-animation-duration:2s;
+	-moz-animation-delay:3s;
 	-moz-animation-timing-function:ease-in;
 	-moz-animation-fill-mode:forwards;
 	-o-animation-name:img-fadein;
-	-o-animation-duration:1s;
-	-o-animation-delay:0.5s;
+	-o-animation-duration:2s;
+	-o-animation-delay:3s;
 	-o-animation-timing-function:ease-in;
 	-o-animation-fill-mode:forwards;
 	}
@@ -199,6 +199,13 @@ a {
 		from  {opacity:0;}
 		to {opacity:1;}
 	}
+
+.close-btn{
+	position:absolute;
+	top:30px;
+	right:6%;
+	font-size: 45px !important;
+	}
 	
 /*=========================================================TIPS ===========================================================*/
 
@@ -217,6 +224,10 @@ a {
 	background-repeat:repeat-x !important;
 	padding:0px;
 	}
+
+#brand-name{
+	display:none;
+}
 }
 
 /*===============================================TABLET STYLES BEGIN========================================================== */

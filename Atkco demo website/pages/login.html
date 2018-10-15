@@ -24,19 +24,19 @@
 
         <div class="row" style="position:absolute; z-index:1000;">
             <div class="col-sm-3">
-                <img class="img-fluid sliding" src="../Image/Copy of mark+type-bw.png" width="16%" style="margin-top:50px; margin-left:50px; display:inline-block;">
-               <span width:"95%" style="display:inline-block; vertical-align:bottom;"> <h2 class="sliding"> Atkco </h2> </span>
+                <img class="img-responsive sliding2" src="../Image/Copy of mark+type-bw.png" width="17%" style="margin-top:30px; margin-left:10%; display:inline-block;">
+               <span width:"95%" style="display:inline-block; vertical-align:bottom;"> <h2 class="img-responsive sliding2" id="brand-name"style="font-size:2vw"> Atkco </h2> </span>
             </div>
         </div>
-        <div id="page-split1" class="row" style="height:100% !important;">
-        	<div class="col-sm-6" style="overflow:hidden;">
+        <div class="row" style="height:100% !important;">
+        	<div id="page-split1" class="col-sm-6" style="overflow:hidden;">
             	<img class="img-fluid img-fadein" src="../Image/cup-laptop.jpg" style=" width:100%;">
             </div>
             <div id="page-split2" class="col-sm-6">
-            	<form class="form-inline sliding2" style="display:block;">
+            	<form id="form1" class="form-inline sliding2" style="display:block;">
                 	<p> Welcome to <span>ATKCO.</span> </p>
-                	<input name="email" type="email" placeholder="E-mail" required>
-                    <input name="password" type="password" placeholder="password" required>
+                	<input name="email" type="email" placeholder="E-mail" >
+                    <input name="password" type="password" placeholder="password">
                      <div class="checkbox" style="width:80%;">
                      <input type="checkbox" id="remember" name="remember">
                      <label for="remember">  Remember me</label>
@@ -44,12 +44,27 @@
                      </div>
                      <div class="row">
                      <button class="btn"> Login </button>
+                     <button id="btn-signup" type="button" class="btn" onClick="activateAnimation()"> Sign Up </button>
+                     </div>
+                </form>
+                
+                <!-- SIGN UP -->
+                
+                <form id="signupForm" class="form-inline sliding2" >
+                	<p> Welcome to <span>ATKCO.</span> </p>
+                    <input name="firstName" type="text" placeholder="First name" required>
+                    <input name="lastName" type="text" placeholder="Last name" required>
+                	<input name="email" type="email" placeholder="E-mail" required>
+                    <input name="password" type="password" placeholder="Password" required>
+                    <input name="confirmPassword" type="password" placeholder="Confirm password" required>
+                     <div class="row">
                      <button id="btn-signup" class="btn"> Sign Up </button>
+                     <button id="cancel-btn" type="button" class="btn" onClick="activateAnimation()"> Cancel </button>
                      </div>
                 </form>
             </div>
         </div>
    
-
+	<script src="../scripts/effects.js"></script> 
     </body>
 </html>
