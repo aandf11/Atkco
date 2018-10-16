@@ -189,19 +189,19 @@ a {
 	}
 
 @keyframes sliding3{
-		from  {opacity:0; transform:translateY(5%);}
+		from  {opacity:0; transform:translateY(4%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 @-webkit-keyframes sliding3{
-		from  {opacity:0; transform:translateY(5%);}
+		from  {opacity:0; transform:translateY(4%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 @-moz-keyframes sliding3{
-		from  {opacity:0; transform:translateY(5%);}
+		from  {opacity:0; transform:translateY(4%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 @-o-keyframes sliding3{
-		from  {opacity:0; transform:translateY(5%);}
+		from  {opacity:0; transform:translateY(4%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 	
@@ -288,7 +288,7 @@ a {
 
 #signupForm{
 	display:none;
-	margin-top:10% !important;	
+	margin-top:7% !important;	
 }
 
 
