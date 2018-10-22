@@ -22,14 +22,14 @@
 
 <body >
 <!-- QUESTIONS SCREEN-->
-	 <div class="container-fluid" style="background-color:#FFF; width:100%; height:100%; z-index:20000; position:absolute">
+	 <div class="container-fluid questions-container" style="background-color:#FFF; width:100%; height:100%; z-index:20000; position:absolute">
        <div class="row">
             <div class="col-sm-3">
                 <img class="img-responsive" src="../Image/Copy of mark+type-bw.png" width="16%" style="margin-top:30px; margin-left:10%; display:inline-block;">
                <span width:"95%" style="display:inline-block; vertical-align:bottom;"> <h2 id="brand-name" style="font-size:2.5vw"> Atkco </h2> </span>
             </div>
        </div>
-       <div class="close-btn">  &times </div>
+       <div class="close-btn" onclick="activateAnimation()" style="cursor:pointer"><a>  &times </a> </div>
        <div class="row" style="margin-top:60px; padding-left:3%;"> 
        		<a href="#"> <img class="img-responsive" src="../Image/icons/back.png"  style="width:20px; height:20px;"/> </a>
             <a href="#" style="position:absolute; right:5%"> <img class="img-responsive" src="../Image/icons/forward.png" style="width:20px; height:20px;"/> </a>
@@ -39,7 +39,7 @@
 
 
 <!-- OVERLAY TIPS SCREEN-->
-        <div class="row"  style="width:80%; background-color:#FFF; position:absolute; z-index:100;margin-top:7%;margin-left:10%;margin-right:10%; padding-top:10px; text-align:center; box-shadow:0 0 10px 5px rgba(0,0,0,0.2);">
+        <div id="tips-screen" class="row"  style="width:80%; background-color:#FFF; position:absolute; z-index:100;margin-top:7%;margin-left:10%;margin-right:10%; padding-top:10px; text-align:center; box-shadow:0 0 10px 5px rgba(0,0,0,0.2);">
           <div class="col-12">
             <h3 class="sliding"> Tips for the Test</h3>
           </div>
@@ -56,13 +56,15 @@
             <p> Answer honestly. The test is not attached to a grade, take a breath, answer with no pressure, You can do it!</p>
           </div> 
           <div class="col-12">
-          	<BUTTON class="btn btn-success btn-lg img-fadein" style="width:60%; margin-left:5%; margin-top:30px;margin-bottom:30px;"> Start assesment </BUTTON> 
+          	<BUTTON id="start-assesment" class="btn btn-success btn-lg img-fadein" style="width:60%; margin-left:5%; margin-top:30px;margin-bottom:30px;" onclick="activateAnimation()"> Start assesment </BUTTON> 
             </div>
         </div>
 <!-- OVERLAY TIPS SCREEN END-->
 
       <div class="bg-img-fadein" id="tips-background">
 	 </div>
+     
+     <script src="../scripts/effects.js"></script>
     
 </body>
 </html>
