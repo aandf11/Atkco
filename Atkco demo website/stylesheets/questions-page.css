@@ -15,10 +15,10 @@ body, html{
 	margin:0px;
 }
 *{
-	box-sizing:border-box;	
+	box-sizing:border-box;
 }
 ul{
-	list-style:none;	
+	list-style:none;
 }
 
 ::-webkit-input-placeholder{
@@ -52,7 +52,7 @@ a {
 	border-bottom:4px solid #2a8184;
 	padding:10px 0px 0px 0px;
 	margin-right:4px;
-	
+
 	}
 #login-btn{
 	border: 1.2px solid #0B6264;
@@ -66,7 +66,7 @@ a {
 	background-color:#3a9093;
 	color:#FFF !important;
 	}
-	
+
 .btn{
 	background-color: #2a8184 !important;
 	}
@@ -74,71 +74,71 @@ a {
 .btn:hover{
 	background-color: #3a9093 !important;
 	}
-	
+
 #home-img-container{
 	overflow:hidden;
-	height:450px; 
+	height:450px;
 	border-bottom:solid 10px #0B6264;
 	}
 
 .sliding{
 	opacity:0;
 	animation-name:sliding;
-	animation-duration:2s;
+	animation-duration:1s;
 	animation-delay:1s;
 	animation-fill-mode:forwards;
 	-webkit-animation-name:sliding;
-	-webkit-animation-duration:2s;
+	-webkit-animation-duration:1s;
 	-webkit-animation-delay:1s;
 	-webkit-animation-fill-mode:forwards;
 	-moz-animation-name:sliding;
-	-moz-animation-duration:2s;
+	-moz-animation-duration:1s;
 	-moz-animation-delay:1s;
 	-moz-animation-fill-mode:forwards;
 	-o-animation-name:sliding;
-	-o-animation-duration:2s;
+	-o-animation-duration:1s;
 	-o-animation-delay:1s;
 	-o-animation-fill-mode:forwards;
 	}
 
 @keyframes sliding{
-		from  {opacity:0; transform:translateY(60%);}
+		from  {opacity:0; transform:translateY(15%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 @-webkit-keyframes sliding{
-		from  {opacity:0; transform:translateY(60%);}
+		from  {opacity:0; transform:translateY(15%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 @-moz-keyframes sliding{
-		from  {opacity:0; transform:translateY(60%);}
+		from  {opacity:0; transform:translateY(15%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 @-o-keyframes sliding{
-		from  {opacity:0; transform:translateY(60%);}
+		from  {opacity:0; transform:translateY(15%);}
 		to {opacity:1; transform:translateY(0%);}
 	}
 
-	
+
 .img-fadein{
 	opacity:0;
 	animation-name:img-fadein;
 	animation-duration:1s;
-	animation-delay:3s;
+	animation-delay:2.5s;
 	animation-timing-function:ease-in;
 	animation-fill-mode:forwards;
 	-webkit-animation-name:img-fadein;
 	-webkit-animation-duration:1s;
-	-webkit-animation-delay:3s;
+	-webkit-animation-delay:2.5s;
 	-webkit-animation-timing-function:ease-in;
 	-webkit-animation-fill-mode:forwards;
 	-moz-animation-name:img-fadein;
 	-moz-animation-duration:1s;
-	-moz-animation-delay:3s;
+	-moz-animation-delay:2.5s;
 	-moz-animation-timing-function:ease-in;
 	-moz-animation-fill-mode:forwards;
 	-o-animation-name:img-fadein;
 	-o-animation-duration:1s;
-	-o-animation-delay:3s;
+	-o-animation-delay:2.5s;
 	-o-animation-timing-function:ease-in;
 	-o-animation-fill-mode:forwards;
 	}
@@ -159,7 +159,7 @@ a {
 		to {opacity:1;}
 	}
 
-	
+
 .bg-img-fadein{
 	opacity:0;
 	animation-name:img-fadein;
@@ -206,7 +206,7 @@ a {
 	right:6%;
 	font-size: 45px !important;
 	}
-	
+
 .questions-container{
 	display:none;
 	}
@@ -243,7 +243,7 @@ a {
 	background-size:cover !important;
 	background-repeat:repeat-x;
 	padding:0px;
-	}	
+	}
 }
 /*=================================================TABLET STYLES END========================================================== */
 
