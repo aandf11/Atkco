@@ -1,0 +1,69 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title> Homepage </title>
+<link rel="stylesheet" href="../static/main.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+    <body>
+    	<div class="container-fluid">
+        	<div class="row">
+            	<div class="col-sm-3">
+                	<img class="img-fluid sliding" src="../static/Image/Copy of mark+type-bw.png" width="16%" style="margin-top:50px; margin-left:50px; display:inline-block;">
+                   <span width:"95%" style="display:inline-block; vertical-align:bottom;"> <h2 class="sliding" style="font-size:2.5vw"> Atkco </h2> </span>
+        		</div>
+                <div class="col-sm-9" id="desktop-menu">
+                    <ul class="nav justify-content-end sliding" style="margin-top:60px; margin-right:50px; text-transform:uppercase; color:#000;">
+                        <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
+                        <li class="nav-item"><a class="nav-link" id="login-btn" href="{{url_for('login')}}"> Login </a></li>
+                    </ul>
+                </div>
+        	</div>
+            <!-- MOBILE MENU -->
+            <div class="sliding" id="mobile-menu" style="width:60px; position:absolute; top:30px; right: 20px;" onClick="activateAnimation()" >
+             	<img src="../static/Image/icons/menu-green.png" style="width:100%;">
+            </div>
+            <ul class="mobile-menu-content" style="width:100%; height:100%; background-color:#2a8184; z-index:10000; position:absolute; top:0; left:0; right:0; padding-top:90px;">
+            		<a class="close-menu" style="width:60px;position:absolute;top:10px;right:5px !important; font-size:45px;" onClick="activateAnimation()" >&times;</a>
+                	<li><a class="mobile-menu-content-opt" href="#"> About </a></li>
+                    <li><a class="mobile-menu-content-opt" href="{{url_for('login')}}"> Login </a></li>
+                </ul>
+
+
+
+            <div class="row" style="margin-top:5%;">
+            	<div class="col-md-6" style="margin-top:60px;">
+                    <pre style="white-space:pre-wrap; overflow-y:hidden; overflow-x:hidden;">
+                    	<h1 class="sliding" style="margin-left:12px;"> The Skills Assessment <br> for your  <b style="color:#2a8184">Job of the Future</b></h1>
+                        <p class="sliding" style="margin-left:50px; margin-bottom:0px;"> Et nesciunt repellendus quia.<br> Illo et non in delectus voluptatem autem totam.<br> Tempora sed accusantium animi consequatur non.<br> Labore voluptate iusto ve
+                        </p>
+                        <a href=""class="btn btn-success btn-lg img-fadein" style="width:60%; float:left; margin-left:40px;"> Learn more </a>
+                    </pre>
+
+                </div>
+                <div class="col-md-6 img-fadein" id="home-img-container">
+                	<img class="img-fluid"  src="../static/Image/rawpixel-797098-unsplash.jpg">
+                </div>
+            </div>
+
+  	   </div>
+
+
+<script src="../static/effects.js"></script>
+    </body>
+</html>

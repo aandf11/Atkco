@@ -1,0 +1,316 @@
+@charset "utf-8";
+/*==========================================================GENERAL STYLES=====================================================*/
+
+body, html{
+	overflow-x:hidden;
+    height: 100%;
+	max-height:100%;
+    font-family:Montserrat, lato, sans-serif !important;
+    -webkit-background-size:auto;
+    -moz-background-size: auto;
+    -o-background-size:auto;
+	background-size:cover;
+    background-repeat: no-repeat;
+    background-position: left;
+	margin:0px;
+}
+*{
+	box-sizing:border-box;
+}
+ul{
+	list-style:none;
+}
+
+::-webkit-input-placeholder{
+    font-size:16px;
+    color:#C0C0C0;
+}
+
+::-moz-placeholder{
+    font-size:16px;
+    color:#C0C0C0;
+}
+:-ms-input-placeholder{
+    font-size:16px;
+    color:#C0C0C0;
+}
+:-moz-placeholder{
+    font-size:16px;
+    color:#C0C0C0;
+}
+
+*:focus{
+    outline: none;
+}
+a {
+    text-decoration:none;
+	color: #000 !important;
+}
+
+#active-page{
+	color:#2a8184 !important;
+	border-bottom:4px solid #2a8184;
+	padding:10px 0px 0px 0px;
+	margin-right:4px;
+
+	}
+#login-btn{
+	border: 1.2px solid #0B6264;
+	border-radius:10px;
+	margin-left:10px;
+	}
+#login-btn:hover{
+	border: 1.2px solid #0B6264;
+	border-radius:10px;
+	margin-left:10px;
+	background-color:#3a9093;
+	color:#FFF !important;
+	}
+
+.btn{
+	background-color: #2a8184 !important;
+	}
+
+.btn:hover{
+	background-color: #3a9093 !important;
+	}
+
+#home-img-container{
+	overflow:hidden;
+	height:450px;
+	border-bottom:solid 10px #0B6264;
+	}
+
+.sliding{
+	opacity:0;
+	animation-name:sliding;
+	animation-duration:1s;
+	animation-delay:1s;
+	animation-fill-mode:forwards;
+	-webkit-animation-name:sliding;
+	-webkit-animation-duration:1s;
+	-webkit-animation-delay:1s;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-name:sliding;
+	-moz-animation-duration:1s;
+	-moz-animation-delay:1s;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-name:sliding;
+	-o-animation-duration:1s;
+	-o-animation-delay:1s;
+	-o-animation-fill-mode:forwards;
+	}
+
+@keyframes sliding{
+		from  {opacity:0; transform:translateY(15%);}
+		to {opacity:1; transform:translateY(0%);}
+	}
+@-webkit-keyframes sliding{
+		from  {opacity:0; transform:translateY(15%);}
+		to {opacity:1; transform:translateY(0%);}
+	}
+@-moz-keyframes sliding{
+		from  {opacity:0; transform:translateY(15%);}
+		to {opacity:1; transform:translateY(0%);}
+	}
+@-o-keyframes sliding{
+		from  {opacity:0; transform:translateY(15%);}
+		to {opacity:1; transform:translateY(0%);}
+	}
+
+
+.img-fadein{
+	opacity:0;
+	animation-name:img-fadein;
+	animation-duration:1s;
+	animation-delay:2.5s;
+	animation-timing-function:ease-in;
+	animation-fill-mode:forwards;
+	-webkit-animation-name:img-fadein;
+	-webkit-animation-duration:1s;
+	-webkit-animation-delay:2.5s;
+	-webkit-animation-timing-function:ease-in;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-name:img-fadein;
+	-moz-animation-duration:1s;
+	-moz-animation-delay:2.5s;
+	-moz-animation-timing-function:ease-in;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-name:img-fadein;
+	-o-animation-duration:1s;
+	-o-animation-delay:2.5s;
+	-o-animation-timing-function:ease-in;
+	-o-animation-fill-mode:forwards;
+	}
+@keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-webkit-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-moz-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-o-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+
+
+.bg-img-fadein{
+	opacity:0;
+	animation-name:img-fadein;
+	animation-duration:2s;
+	animation-delay:3s;
+	animation-timing-function:ease-in;
+	animation-fill-mode:forwards;
+	-webkit-animation-name:img-fadein;
+	-webkit-animation-duration:2s;
+	-webkit-animation-delay:3s;
+	-webkit-animation-timing-function:ease-in;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation-name:img-fadein;
+	-moz-animation-duration:2s;
+	-moz-animation-delay:3s;
+	-moz-animation-timing-function:ease-in;
+	-moz-animation-fill-mode:forwards;
+	-o-animation-name:img-fadein;
+	-o-animation-duration:2s;
+	-o-animation-delay:3s;
+	-o-animation-timing-function:ease-in;
+	-o-animation-fill-mode:forwards;
+	}
+@keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-webkit-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-moz-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+@-o-keyframes img-fadein{
+		from  {opacity:0;}
+		to {opacity:1;}
+	}
+
+.close-btn{
+	position:absolute;
+	top:30px;
+	right:6%;
+	font-size: 45px !important;
+	}
+
+.questions-container{
+	display:none;
+	}
+
+	table{
+		border-collapse: separate;
+			margin-top: 70px;
+	}
+
+/*	table tr:first-child td:first-child{
+		border-radius:10px 0 0 10px;
+		-o-border-radius:10px 0 0 10px;
+		-webkit-border-radius:10px 0 0 10px;
+		-moz-border-radius: 10px 0 0 10px;
+		-ms-border-radius:10px 0 0 10px;
+	}
+
+  table tr:last-child td:last-child{
+		border-radius:0 10px 10px 0;
+		-o-border-radius:0 10px 10px 0;
+		-webkit-border-radius:0 10px 10px 0;
+		-moz-border-radius:0 10px 10px 0;
+		-ms-border-radius:0 10px 10px 0;
+	}*/
+
+tr, 	td {
+		cursor: pointer;
+		border:2px solid #3a9093;
+		padding: 8px;
+		color: #2a8184;
+		font-size:1.2vw;
+		width: 20%;
+		text-align: center;
+	}
+
+	td:hover{
+		color: white;
+		background-color:  #3a9093;
+	}
+
+
+/*==============================================GENERAL STYLES END========================================================*/
+
+/*=============================================================MOBILE STYLES===================================================*/
+@media only screen and (max-width: 600px) {
+#tips-background{
+	height:200% !important;
+	width:100%;
+	position:absolute;
+	z-index:99;
+	background-image:url(Image/white-staircase.jpg);
+	background-size:cover !important;
+	background-repeat:repeat-x !important;
+	padding:0px;
+	}
+
+#brand-name{
+	display:none;
+}
+
+tr, td {
+	cursor: pointer;
+	border:2px solid #3a9093;
+	padding: 8px;
+	color: #2a8184;
+	font-size:2.5vw !important;
+	width: 20%;
+	text-align: center;
+}
+
+.form-question{
+	font-size:4vw !important;
+	width:80% !important;
+}
+
+}
+
+/*===============================================TABLET STYLES BEGIN========================================================== */
+@media only screen and (max-width: 898px) {
+#tips-background{
+	height:100%;
+	width:100%;
+	position:absolute;
+	z-index:99;
+	background-image:url(Image/white-staircase.jpg);
+	background-size:cover !important;
+	background-repeat:repeat-x;
+	padding:0px;
+	}
+}
+/*=================================================TABLET STYLES END========================================================== */
+
+
+
+/*==============================================DESKTOP STYLES BEGIN==================================================*/
+@media only screen and (min-width: 900px) {
+#tips-background{
+	height:100%;
+	width:100%;
+	position:absolute;
+	z-index:99;
+	background-image:url(Image/white-staircase.jpg);
+	background-size:cover !important;
+	background-repeat:repeat-x;
+	padding:0px;
+	}
+}

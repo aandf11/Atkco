@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<title>questions</title>
+<link rel="stylesheet" href="../static/questions-page.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+
+<body >
+<!-- QUESTIONS SCREEN-->
+	 <div class="container-fluid questions-container" style="background-color:#FFF; width:100%; height:100%; z-index:20000; position:absolute">
+       <div class="row">
+            <div class="col-sm-3">
+                <img class="img-responsive" src="../static/Image/Copy of mark+type-bw.png" width="16%" style="margin-top:30px; margin-left:10%; display:inline-block;">
+               <span width:"95%" style="display:inline-block; vertical-align:bottom;"> <h2 id="brand-name" style="font-size:2.5vw"> Atkco </h2> </span>
+            </div>
+       </div>
+       <div class="close-btn" onclick="activateAnimation()" style="cursor:pointer"><a>  &times </a> </div>
+       <div class="row" style="margin-top:60px; padding-left:3%;">
+       		<a href="#"> <img class="img-responsive" src="../static/Image/icons/back.png"  style="width:20px; height:20px;"/> </a>
+          <a href="#" style="position:absolute; right:5%"> <img class="img-responsive" src="../static/Image/icons/forward.png" style="width:20px; height:20px;"/> </a>
+       </div>
+
+			 <div class="row" style="margin-top:60px; padding-left:3%; font-size:2vw">
+				 <form class="sliding">
+					 <p class="form-question" style="width:60%; margin-bottom: 20px; margin-left:10px; font-weight: bold;"> I have experience working in large teams synthesizing goals, objectives and boundraries </p>
+					 <div class="col-sm-12">
+						 <table>
+							 <tr>
+								 <td> strongly agree </td>
+								 <td> agree </td>
+								 <td> neutral </td>
+								 <td> disagree </td>
+								 <td> strongly disagree </td>
+							 </tr>
+						 </table>
+					 </div>
+				 </form>
+			 </div>
+    </div>
+<!-- QUESTIONS SCREEN END-->
+
+
+<!-- OVERLAY TIPS SCREEN-->
+        <div id="tips-screen" class="row sliding"  style="width:80%; background-color:#FFF; position:absolute; z-index:100;margin-top:7%;margin-left:10%;margin-right:10%; padding-top:10px; text-align:center; box-shadow:0 0 10px 5px rgba(0,0,0,0.2);">
+          <div class="col-12">
+            <h3 class="sliding"> Tips for the Test</h3>
+          </div>
+          <div class="col-sm-4">
+          	<img class="img-responsive" src="../static/Image/icons/bulb.png" style="width:80%"/>
+            <p> We all have different skills & interests, dont be tempted to change who you are for who you want to be.<br /> We'll take care of it</p>
+          </div>
+          <div class="col-sm-4">
+          	<img class="img-responsive" src="../static/Image/icons/box.png" style="width:80%; padding-top:30px;"/>
+            <p> Don't be afraid to think outside the box. This test is where you want to go - be open, test the boundaries that may bring you the next opportunity</p>
+          </div>
+          <div class="col-sm-4">
+          	<img class="img-responsive" src="../static/Image/icons/list.png" style="width:60%; padding-top:52px;"/>
+            <p> Answer honestly. The test is not attached to a grade, take a breath, answer with no pressure, You can do it!</p>
+          </div>
+          <div class="col-12">
+          	<BUTTON id="start-assesment" class="btn btn-success btn-lg img-fadein" style="width:60%; margin-left:5%; margin-top:30px;margin-bottom:30px;" onclick="activateAnimation()"> Start assesment </BUTTON>
+            </div>
+        </div>
+<!-- OVERLAY TIPS SCREEN END-->
+
+      <div class="bg-img-fadein" id="tips-background">
+	 </div>
+
+     <script src="../static/effects.js"></script>
+
+</body>
+</html>
